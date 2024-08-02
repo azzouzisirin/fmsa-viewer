@@ -17,7 +17,7 @@ export async function GET(req) {
       });
     }
 
-    const filePath = path.resolve("./public/FMSCA_records.xlsx");
+    const filePath = path.resolve("https://docs.google.com/spreadsheets/d/1hB_LjBT9ezZigXnC-MblT2PXZledkZqBnvV23ssfSuE/edit");
 
     if (!fs.existsSync(filePath)) {
       return new Response(JSON.stringify({ error: "File does not exist" }), {
